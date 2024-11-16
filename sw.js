@@ -1,12 +1,12 @@
 const preCache = [
-  "/images/taichi.png",
-  "/images/banner.webp",
-  "/images/taichi-fill.png",
-  "/css/loader.css",
-  "/css/style.css",
-  "/js/script.js",
+  "/Balinhui/images/taichi.png",
+  "/Balinhui/images/banner.webp",
+  "/Balinhui/images/taichi-fill.png",
+  "/Balinhui/css/loader.css",
+  "/Balinhui/css/style.css",
+  "/Balinhui/js/script.js",
 ];
-const VERSION = "1731732082555";
+const VERSION = "1731735211819";
 const cacheDomain = [
   "fonts.googleapis.com",
   "npm.webcache.cn",
