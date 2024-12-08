@@ -3,11 +3,11 @@
   <title>Balinhui的博客</title>
   
   <subtitle>以最美好的祝福祝愿你</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://balinhui.github.io/project/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://balinhui.github.io/project/"/>
   <updated>2024-12-01T08:58:07.280Z</updated>
-  <id>http://example.com/</id>
+  <id>https://balinhui.github.io/project/</id>
   
   <author>
     <name>Balinhui</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>math</title>
-    <link href="http://example.com/2024/12/05/%E6%95%B0%E5%AD%A6/"/>
-    <id>http://example.com/2024/12/05/%E6%95%B0%E5%AD%A6/</id>
+    <link href="https://balinhui.github.io/project/2024/12/05/%E6%95%B0%E5%AD%A6/"/>
+    <id>https://balinhui.github.io/project/2024/12/05/%E6%95%B0%E5%AD%A6/</id>
     <published>2024-12-05T12:57:00.229Z</published>
     <updated>2024-12-01T08:58:07.280Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2024/12/05/test/"/>
-    <id>http://example.com/2024/12/05/test/</id>
+    <link href="https://balinhui.github.io/project/2024/12/05/test/"/>
+    <id>https://balinhui.github.io/project/2024/12/05/test/</id>
     <published>2024-12-05T12:57:00.229Z</published>
     <updated>2024-11-15T13:28:18.515Z</updated>
     
@@ -61,8 +61,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2013/12/24/hello-world/"/>
-    <id>http://example.com/2013/12/24/hello-world/</id>
+    <link href="https://balinhui.github.io/project/2013/12/24/hello-world/"/>
+    <id>https://balinhui.github.io/project/2013/12/24/hello-world/</id>
     <published>2013-12-24T09:49:32.000Z</published>
     <updated>2024-12-05T12:44:23.314Z</updated>
     
