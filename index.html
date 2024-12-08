@@ -209,10 +209,48 @@
     <div class="post-wrapper">
   <div class="post-wrap-left" data-aos="fade-up">
     
-      <a class="post-link" href="/2024/12/05/test/" aria-label="Hello World"></a>
+      <a class="post-link" href="/2024/12/08/%E7%A7%BB%E9%99%A4C%E7%9B%98%E4%BB%A5%E5%A4%96%E7%9A%84Program-Files/" aria-label="移除C盘以外的Program_Files"></a>
     
     
     <div class="post-cover-left">
+      
+        
+        
+          <img data-src="/covers/cover.webp" data-sizes="auto" alt="移除C盘以外的Program_Files" class="lazyload">
+        
+      
+    </div>
+    <div class="post-info">
+      <div class="post-meta">
+        <span><span class="icon-calendar"></span>2024-12-08</span>
+        <span><span class="icon-pencil"></span>234 字</span>
+        <span><span class="icon-clock"></span>1 分钟</span>
+      </div>
+      <h2 class="post-title">移除C盘以外的Program_Files</h2>
+      <article class="post-article">
+        
+          每当我在设置Xbox安装路径时，或者不小心更改了Microsoft Store中的应用的安装路径时，对应的盘下总会生成Program Files文件夹，而且还删不掉。我已知这个文件没用，又想把它删掉，那该怎么办呢？
+ 解决方法
+直接删除是没有用的，重启后还会回来
+ 获取所有卷信息
+可以打开PowerShell，以管理员身份运行，使用命令Get-AppxVolume查看WindowsApps挂载在哪些盘上
+1PS C:\Windows\System32&amp;gt; Get-AppxVolume
+此时，除了C盘，还看到有其他盘挂载了WindowsApps
+ 删除不用的卷
+使用命令Remove-Appx
+        
+      </article>
+    </div>
+  </div>
+</div>
+  
+    <div class="post-wrapper">
+  <div class="post-wrap-right" data-aos="fade-up">
+    
+      <a class="post-link" href="/2024/12/05/test/" aria-label="Hello World"></a>
+    
+    
+    <div class="post-cover-right">
       
         
         
@@ -246,12 +284,12 @@ Hello World
 </div>
   
     <div class="post-wrapper">
-  <div class="post-wrap-right" data-aos="fade-up">
+  <div class="post-wrap-left" data-aos="fade-up">
     
       <a class="post-link" href="/2024/12/05/%E6%95%B0%E5%AD%A6/" aria-label="math"></a>
     
     
-    <div class="post-cover-right">
+    <div class="post-cover-left">
       
         
         
@@ -293,12 +331,12 @@ p=W/t
 </div>
   
     <div class="post-wrapper">
-  <div class="post-wrap-left" data-aos="fade-up">
+  <div class="post-wrap-right" data-aos="fade-up">
     
       <a class="post-link" href="/2013/12/24/hello-world/" aria-label="Hello World"></a>
     
     
-    <div class="post-cover-left">
+    <div class="post-cover-right">
       
         
         
@@ -340,7 +378,7 @@ p=W/t
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">3</div>
+    <div class="sidebar-state-number">4</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
@@ -431,10 +469,10 @@ p=W/t
     
       <div>
         <span class="icon-brush"></span>
-        165
+        399
         &nbsp;|&nbsp;
         <span class="icon-coffee"></span>
-        00:03
+        00:04
       </div>
     
     
@@ -470,7 +508,7 @@ p=W/t
 <div class="sidebar-state">
   <div class="sidebar-state-article">
     <div>文章</div>
-    <div class="sidebar-state-number">3</div>
+    <div class="sidebar-state-number">4</div>
   </div>
   <div class="sidebar-state-category">
     <div>分类</div>
