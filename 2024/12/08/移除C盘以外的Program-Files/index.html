@@ -9,7 +9,7 @@
 
   
 
-  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_tq6stt6tcg';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};</script>
+  <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_bq08450reo';window.REIMU_CONFIG.clipboard_tips = {"success":"复制成功(*^▽^*)","fail":"复制失败 (ﾟ⊿ﾟ)ﾂ","copyright":{"enable":false,"count":50,"content":"本文版权：本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！"}};window.REIMU_CONFIG.code_block = {"expand":true};</script>
   
   <title>
     移除C盘以外的Program_Files |
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CJetBrains%20Mono:400,400italic,700,700italic&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish:400,400italic,700,700italic%7CNoto%20Serif%20SC:400,400italic,700,700italic%7CJetBrains%20Mono:400,400italic,700,700italic&display=swap" media="print" onload="this.media&#x3D;&#39;all&#39;">
   
-    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_tq6stt6tcg.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="//at.alicdn.com/t/c/font_4552607_bq08450reo.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   
   
     
@@ -69,6 +69,7 @@
     
 <link rel="stylesheet" href="https://npm.webcache.cn/@reimujs/aos@0.1.0/dist/aos.css">
 
+  
   
 <meta name="generator" content="Hexo 7.3.0"></head>
 
@@ -169,8 +170,8 @@
 </div>
 <header id="header">
   
-    
-      <picture>
+    <picture>
+      
         
           <source media="(max-width: 479px)" srcset="/images/banner-600w.webp">
         
@@ -179,7 +180,10 @@
           <source media="(min-width: 800px)" srcset="/images/banner.webp">
         
         <img fetchpriority="high" src="/images/banner.webp" alt="移除C盘以外的Program_Files">
-      </picture>
+      
+    </picture>
+    
+      <img src="" alt="移除C盘以外的Program_Files" style="visibility: hidden;">
     
   
   <div id="header-outer">
@@ -202,104 +206,10 @@
   </div>
 </header>
 
-        <div id="content">
-          
-          <section id="main"><article id="post-移除C盘以外的Program-Files" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-inner" data-aos="fade-up">
-    <div class="article-meta">
-      <div class="article-date">
-  <a href="/2024/12/08/%E7%A7%BB%E9%99%A4C%E7%9B%98%E4%BB%A5%E5%A4%96%E7%9A%84Program-Files/" class="article-date-link" data-aos="zoom-in">
-    <time datetime="2024-12-08T13:31:54.000Z" itemprop="datePublished">2024-12-08</time>
-    <time style="display: none;" id="post-update-time">2024-12-08</time>
-  </a>
-</div>
-
-      
-
-    </div>
-    <div class="hr-line"></div>
-    
-
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-      
-        <p>每当我在设置Xbox安装路径时，或者<s>不小心</s>更改了Microsoft Store中的应用的安装路径时，对应的盘下总会生成Program Files文件夹，而且还删不掉。我已知这个文件没用，又想把它删掉，那该怎么办呢？</p>
-<h1 id="解决方法"><a class="markdownIt-Anchor" href="#解决方法"></a> 解决方法</h1>
-<p>直接删除是没有用的，重启后还会回来<br></p>
-<h2 id="获取所有卷信息"><a class="markdownIt-Anchor" href="#获取所有卷信息"></a> 获取所有卷信息</h2>
-<p>可以打开PowerShell，以管理员身份运行，使用命令<code>Get-AppxVolume</code>查看WindowsApps挂载在哪些盘上</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">PS</span> C:\Windows\System32&gt; <span class="built_in">Get-AppxVolume</span></span><br></pre></td></tr></table></figure>
-<p>此时，除了C盘，还看到有其他盘挂载了WindowsApps</p>
-<h2 id="删除不用的卷"><a class="markdownIt-Anchor" href="#删除不用的卷"></a> 删除不用的卷</h2>
-<p>使用命令<code>Remove-AppxVolume -Volume</code>后面加上空格和前面的ID<code>&#123;d22g2f23ft-sdgay-26fg62-32dawf&#125;</code>或盘符<code>D:\</code></p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">PS</span> C:\Windows\System32&gt; <span class="built_in">Remove-AppxVolume</span> <span class="literal">-Volume</span> D:\</span><br></pre></td></tr></table></figure>
-<p>回车后用<code>Get-AppxVolume</code>命令再次查看<br><br />
-只剩C盘后就说明成功</p>
-<p>之后就是更改文件夹属性，然后删除就行了</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      
-      
-      
-      
-      
-      
-      
-      
-
-    </footer>
-  </div>
+        <div id="content"  class="sidebar-right" >
+          <aside id="sidebar">
   
-  <nav id="article-nav" data-aos="fade-up">
-    
-      <div class="article-nav-link-wrap article-nav-link-left">
-        
-          
-          
-            <img data-src="/covers/cover.webp" data-sizes="auto" alt="如何使用Markdown" class="lazyload">
-          
-        
-        <a href="/2024/12/09/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Markdown/"></a>
-        <div class="article-nav-caption">前一篇</div>
-        <h3 class="article-nav-title">
-          
-            如何使用Markdown
-          
-        </h3>
-      </div>
-    
-    
-    <div class="article-nav-link-wrap article-nav-link-right">
-      
-        
-        
-          <img data-src="/covers/cover.webp" data-sizes="auto" alt="Hello World" class="lazyload">
-        
-      
-      <a href="/2024/12/05/test/"></a>
-      <div class="article-nav-caption">后一篇</div>
-      <h3 class="article-nav-title">
-        
-          Hello World
-        
-      </h3>
-    </div>
-    
-  </nav>
-
-
-</article>
-
-
-
-
-
-
-</section>
-          
-            <aside id="sidebar">
+  
   <div class="sidebar-wrapper wrap-sticky">
     <div class="sidebar-wrap" data-aos="fade-up">
       
@@ -390,11 +300,109 @@
     </div>
   </div>
 
+  <div class="sidebar-widget">
   
+  </div>
 </aside>
 
+          <section id="main"><article id="post-移除C盘以外的Program-Files" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <a href="/2024/12/08/%E7%A7%BB%E9%99%A4C%E7%9B%98%E4%BB%A5%E5%A4%96%E7%9A%84Program-Files/" class="article-date-link" data-aos="zoom-in">
+    <time datetime="2024-12-08T13:31:54.000Z" itemprop="datePublished">2024-12-08</time>
+    <time style="display: none;" id="post-update-time">2024-12-08</time>
+  </a>
+</div>
+
+      
+
+    </div>
+    <div class="hr-line"></div>
+    
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <p>每当我在设置Xbox安装路径时，或者<s>不小心</s>更改了Microsoft Store中的应用的安装路径时，对应的盘下总会生成Program Files文件夹，而且还删不掉。我已知这个文件没用，又想把它删掉，那该怎么办呢？</p>
+<h1 id="解决方法"><a class="markdownIt-Anchor" href="#解决方法"></a> 解决方法</h1>
+<p>直接删除是没有用的，重启后还会回来<br></p>
+<h2 id="获取所有卷信息"><a class="markdownIt-Anchor" href="#获取所有卷信息"></a> 获取所有卷信息</h2>
+<p>可以打开PowerShell，以管理员身份运行，使用命令<code>Get-AppxVolume</code>查看WindowsApps挂载在哪些盘上</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">PS</span> C:\Windows\System32&gt; <span class="built_in">Get-AppxVolume</span></span><br></pre></td></tr></table></figure>
+<p>此时，除了C盘，还看到有其他盘挂载了WindowsApps</p>
+<h2 id="删除不用的卷"><a class="markdownIt-Anchor" href="#删除不用的卷"></a> 删除不用的卷</h2>
+<p>使用命令<code>Remove-AppxVolume -Volume</code>后面加上空格和前面的ID<code>&#123;d22g2f23ft-sdgay-26fg62-32dawf&#125;</code>或盘符<code>D:\</code></p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">PS</span> C:\Windows\System32&gt; <span class="built_in">Remove-AppxVolume</span> <span class="literal">-Volume</span> D:\</span><br></pre></td></tr></table></figure>
+<p>回车后用<code>Get-AppxVolume</code>命令再次查看<br><br />
+只剩C盘后就说明成功</p>
+<p>之后就是更改文件夹属性，然后删除就行了</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+    </footer>
+  </div>
+  
+  <nav id="article-nav" data-aos="fade-up">
+    
+      <div class="article-nav-link-wrap article-nav-link-left">
+        
           
+          
+            <img data-src="/covers/cover.webp" data-sizes="auto" alt="如何使用Markdown" class="lazyload">
+          
+        
+        <a href="/2024/12/09/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Markdown/"></a>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">
+          
+            如何使用Markdown
+          
+        </h3>
+      </div>
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        
+        
+          <img data-src="/covers/cover.webp" data-sizes="auto" alt="Hello World" class="lazyload">
+        
+      
+      <a href="/2024/12/05/test/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          Hello World
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+
+
+</section>
         </div>
+        
+        
         <footer id="footer">
   <div style="width: 100%; overflow: hidden">
     <div class="footer-line"></div>
@@ -403,7 +411,7 @@
     
     <div>
       <span class="icon-copyright"></span>
-      2020-2024
+      2020-2025
       <span class="footer-info-sep rotate"></span>
       Balinhui
     </div>
@@ -604,14 +612,34 @@
 
 
 
+
+
 <div id="lazy-script">
   <div>
+    
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "Balinhui",
+          title: "移除C盘以外的Program_Files",
+          url: "http://example.com/2024/12/08/%E7%A7%BB%E9%99%A4C%E7%9B%98%E4%BB%A5%E5%A4%96%E7%9A%84Program-Files/",
+          excerpt: "",
+          description: "",
+          stripContent: "每当我在设置Xbox安装路径时，或者不小心更改了Microsoft Store中的应用的安装路径时，对应的盘下总会生成Program Files文件夹，而且还删不掉。我已知这个文件没用，又想把它删掉，那该怎么办呢？  解决方法 直接删除是没有用的，重启后还会回来  获取所有卷信息 可以打开PowerShell，以管理员身份运行，使用命令Get-AppxVolume查看WindowsApps挂载在哪些盘上 1PS C:\Windows\System32&amp;gt; Get-AppxVolume 此时，",
+          date: "Sun Dec 08 2024 21:31:54 GMT+0800",
+          updated: "Sun Dec 08 2024 22:02:19 GMT+0800",
+          cover: "/images/banner.webp",
+        };
+      </script>
+       
     
     
       
         
 <script src="/js/insert_highlight.js" data-pjax></script>
 
+        
       
     
     
@@ -665,7 +693,7 @@
   \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
                                                   
 `,'color: #ff5252;')
-    console.log('%c Theme.Reimu v' + '1.1.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
+    console.log('%c Theme.Reimu v' + '1.3.0' + ' %c https://github.com/D-Sketon/hexo-theme-reimu ', 'color: white; background: #ff5252; padding:5px 0;', 'padding:4px;border:1px solid #ff5252;')
   </script>
   
 
@@ -690,6 +718,9 @@
 
 
   
+
+
+
 
 
   </body>
