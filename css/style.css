@@ -1400,17 +1400,11 @@ body ::selection {
   font-size: 15px;
   z-index: 1;
   transition: 0.3s;
-}
-.post-sticky:before {
-  margin-right: 5px;
-}
-.post-wrap-left .post-sticky {
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.post-wrap-right .post-sticky {
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
+.post-sticky:before {
+  margin-right: 5px;
 }
 #comments {
   background: var(--color-wrap);
@@ -1424,11 +1418,17 @@ body ::selection {
 .gscomment {
   width: auto;
 }
+.gtcomment {
+  color: var(--color-default);
+}
 .wl-emoji-popup {
   max-width: calc(100vw - 90px) !important;
 }
 .wl-count {
   color: var(--color-default);
+}
+.wl-header input {
+  font-size: revert !important;
 }
 .archives-outer-wrap {
   background: var(--color-wrap);
@@ -1777,6 +1777,15 @@ body ::selection {
   color: var(--highlight-foreground);
   padding: 0;
 }
+.article-entry .highlight {
+  overflow: hidden;
+  interpolate-size: allow-keywords;
+}
+.article-entry .highlight.code-closed pre {
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
 .article-entry .highlight pre {
   border: none;
   margin: 0;
@@ -1810,6 +1819,7 @@ body ::selection {
 }
 .article-entry .highlight .gutter {
   width: 30px;
+  vertical-align: top;
 }
 .article-entry .highlight .gutter pre {
   text-align: right;
@@ -1991,9 +2001,6 @@ pre .javascript .function {
 .code-closed .code-expand {
   transform: rotate(-180deg) !important;
   transition: 0.3s;
-}
-.code-closed pre {
-  display: none;
 }
 .friend-wrap {
   display: flex;
@@ -2471,6 +2478,7 @@ pre .javascript .function {
   justify-content: center;
   align-items: center;
   transition: 0.3s;
+  interpolate-size: allow-keywords;
 }
 .sidebar-wrap .hidden {
   display: none;
@@ -2600,9 +2608,11 @@ pre .javascript .function {
   width: 100%;
 }
 .sidebar-menu-link-wrap {
-  margin: 8px 50px;
   display: flex;
   position: relative;
+  width: 70%;
+  max-width: 200px;
+  margin: 8px auto;
   justify-content: center;
   border: 10px var(--color-red-3-shadow) double;
   transition: border 0.5s;
@@ -2673,7 +2683,7 @@ pre .javascript .function {
 }
 .sidebar-toc-wrapper {
   color: var(--color-link);
-  max-height: calc(100vh - 120px);
+  max-height: calc(100vh - 150px);
   overflow: auto;
 }
 .sidebar-toc-wrapper::-webkit-scrollbar {
@@ -2801,8 +2811,13 @@ pre .javascript .function {
   display: flex;
   flex-direction: column;
   width: 100%;
-  justify-content: center;
   align-items: center;
+  overflow-y: auto;
+  max-height: calc(100vh - 120px);
+}
+.sidebar-common-sidebar::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
 }
 .sidebar-toc-sidebar {
   width: 100%;
