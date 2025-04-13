@@ -28,6 +28,8 @@
 }
 #loader .spinner-box .loading-taichi {
   opacity: 0.8;
+}
+#loader .spinner-box .rotate {
   animation: rotate-all 2s linear infinite;
 }
 #loader .spinner-box .loading-word {

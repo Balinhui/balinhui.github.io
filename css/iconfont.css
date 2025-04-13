@@ -1,6 +1,6 @@
 @font-face {
   font-family: "iconfont";
-  src: url("//at.alicdn.com/t/c/font_4552607_bq08450reo.woff2") format('woff2');
+  src: url("//at.alicdn.com/t/c/font_4552607_0khxww3tj3q9.woff2") format('woff2');
   font-display: swap;
 }
 .tag-wrap .archives-tag-list-link:before {
@@ -67,6 +67,14 @@
   font-family: "iconfont";
   content: "\e617";
 }
+#nav-circle-half-stroke-btn:before {
+  font-family: "iconfont";
+  content: "\e641";
+}
+#nav-language-btn:before {
+  font-family: "iconfont";
+  content: "\e642";
+}
 .icon-copy:before {
   font-family: "iconfont";
   content: "\e60c";
@@ -114,12 +122,6 @@
 .ais-pagination--item__next a:before {
   font-family: "iconfont";
   content: "\e630";
-}
-.icon-github:before {
-  content: "\e619";
-}
-.icon-email:before {
-  content: "\e63c";
 }
 .sidebar-btn-wrapper .sidebar-toc-btn:before {
   font-family: "iconfont";
