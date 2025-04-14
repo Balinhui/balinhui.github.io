@@ -183,9 +183,18 @@
     
       <picture>
         
+          
+            <source media="(max-width: 479px)" srcset="/images/banner-600w.webp">
+          
+            <source media="(max-width: 799px)" srcset="/images/banner-800w.webp">
+          
+            <source media="(min-width: 800px)" srcset="/images/banner.webp">
+          
+          <img  fetchpriority="high" src="/images/banner.webp" alt="关于">
+        
       </picture>
       
-        <img  fetchpriority="high" src="/images/banner.webp" alt="关于">
+        <img alt="关于" style="visibility: hidden;">
       
     
   
