@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2025-04-13T13:42:51.549Z</updated>
+  <updated>2025-04-13T13:44:29.840Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,27 +15,6 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://example.com/2025/01/20/test/"/>
-    <id>http://example.com/2025/01/20/test/</id>
-    <published>2025-01-20T11:01:38.026Z</published>
-    <updated>2025-04-13T13:42:51.549Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="如何用java写hello-world"><a class="markdownIt-Anchor" href="#如何用java写hello-world"></a> 如何用Java写Hello World</h1><p>java作为一款热门的语言，掌握如何用它来写Hello World是非常重要的<br><br />接下来就让我来演示一下</p><blockquote><p>Hello World</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">      System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></blockquote><h1 id="完成"><a class="markdownIt-Anchor" href="#完成"></a> 完成！</h1><p>在上面的例子中，我们新建了一个HelloWorld类，并在主方法中打印了<code>Hello World</code><br><br />怎么样？简单吧，<s>接下来就来开发一个安卓应用吧</s></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;如何用java写hello-world&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#如何用java写hello-world&quot;&gt;&lt;/a&gt; 如何用Java写Hello World&lt;/h1&gt;
-&lt;p&gt;java作为一款热门的语言，掌握如何用它来</summary>
-      
-    
-    
-    
-    
-  </entry>
   
   <entry>
     <title>math</title>
@@ -52,6 +31,27 @@
     <summary type="html">&lt;h1 id=&quot;来写数学公式&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#来写数学公式&quot;&gt;&lt;/a&gt; 来写数学公式&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p class=&quot;katex-block&quot;&gt;&lt;span class=&quot;katex-display&quot;</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/2025/01/20/test/"/>
+    <id>http://example.com/2025/01/20/test/</id>
+    <published>2025-01-20T11:01:38.026Z</published>
+    <updated>2025-04-13T13:42:51.549Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="如何用java写hello-world"><a class="markdownIt-Anchor" href="#如何用java写hello-world"></a> 如何用Java写Hello World</h1><p>java作为一款热门的语言，掌握如何用它来写Hello World是非常重要的<br><br />接下来就让我来演示一下</p><blockquote><p>Hello World</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">HelloWorld</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">      System.out.println(<span class="string">&quot;Hello World&quot;</span>);</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></blockquote><h1 id="完成"><a class="markdownIt-Anchor" href="#完成"></a> 完成！</h1><p>在上面的例子中，我们新建了一个HelloWorld类，并在主方法中打印了<code>Hello World</code><br><br />怎么样？简单吧，<s>接下来就来开发一个安卓应用吧</s></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;如何用java写hello-world&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#如何用java写hello-world&quot;&gt;&lt;/a&gt; 如何用Java写Hello World&lt;/h1&gt;
+&lt;p&gt;java作为一款热门的语言，掌握如何用它来</summary>
       
     
     
