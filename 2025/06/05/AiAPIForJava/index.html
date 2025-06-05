@@ -17,7 +17,7 @@
   <script>window.REIMU_CONFIG = {};window.REIMU_CONFIG.icon_font = '4552607_0khxww3tj3q9';window.REIMU_CONFIG.clipboard_tips = {"success":{"en":"Copy successfully (*^▽^*)","zh-CN":"复制成功 (*^▽^*)","zh-TW":"複製成功 (*^▽^*)","ja":"コピー成功 (*^▽^*)"},"fail":{"en":"Copy failed (ﾟ⊿ﾟ)ﾂ","zh-CN":"复制失败 (ﾟ⊿ﾟ)ﾂ","zh-TW":"複製失敗 (ﾟ⊿ﾟ)ﾂ","ja":"コピー失敗 (ﾟ⊿ﾟ)ﾂ"},"copyright":{"enable":false,"count":50,"license_type":"by-nc-sa"}};window.REIMU_CONFIG.clipboard_tips.copyright.content = '本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！';window.REIMU_CONFIG.code_block = {"expand":true};window.REIMU_CONFIG.base = 'http://example.com';</script>
   
   <title>
-    归档: 2025/1 |
+    Ai API for Java |
     
     Balinhui的博客
   </title>
@@ -35,17 +35,18 @@
 
   
   
-    <meta name="description" content="悄咪咪地……">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Balinhui的博客">
-<meta property="og:url" content="http://example.com/archives/2025/01/index.html">
+    <meta name="description" content="To be continue…">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Ai API for Java">
+<meta property="og:url" content="http://example.com/2025/06/05/AiAPIForJava/index.html">
 <meta property="og:site_name" content="Balinhui的博客">
-<meta property="og:description" content="悄咪咪地……">
+<meta property="og:description" content="To be continue…">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/images/banner.webp">
+<meta property="article:published_time" content="2025-06-05T14:50:44.000Z">
+<meta property="article:modified_time" content="2025-06-05T14:51:51.539Z">
 <meta property="article:author" content="Balinhui">
+<meta property="article:tag" content="project">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/images/banner.webp">
   
   
     <link rel="alternate" href="/atom.xml" title="Balinhui的博客" type="application/atom+xml">
@@ -60,7 +61,9 @@
   
     
       
-        <link rel="preload" as="style" onload="this.onload&#x3D;null;this.rel&#x3D;&#39;stylesheet&#39;" href="https://npm.webcache.cn/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6&#x2F;jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx&#x2F;&#x2F;Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+        
+<link rel="stylesheet" href="https://npm.webcache.cn/katex@0.16.11/dist/katex.min.css" integrity="sha384-nB0miv6&#x2F;jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx&#x2F;&#x2F;Rlm+ZU03BU6SQNC66uf4l5+" crossorigin="anonymous">
+
       
     
   
@@ -192,20 +195,22 @@
 <header id="header">
   
     
-      <picture>
-        
-          
-            <source media="(max-width: 479px)" srcset="/images/banner-600w.webp">
-          
-            <source media="(max-width: 799px)" srcset="/images/banner-800w.webp">
-          
-            <source media="(min-width: 800px)" srcset="/images/banner.webp">
-          
-          <img  fetchpriority="high" src="/images/banner.webp" alt="">
-        
-      </picture>
       
-        <img alt="" style="visibility: hidden;">
+        <picture>
+          
+            
+              <source media="(max-width: 479px)" srcset="/images/banner-600w.webp">
+            
+              <source media="(max-width: 799px)" srcset="/images/banner-800w.webp">
+            
+              <source media="(min-width: 800px)" srcset="/images/banner.webp">
+            
+            <img  fetchpriority="high" src="/images/banner.webp" alt="Ai API for Java">
+          
+        </picture>
+        
+          <img alt="Ai API for Java" style="visibility: hidden;">
+        
       
     
   
@@ -215,15 +220,13 @@
         
         
           <a href="/" id="logo">
-            <h1 data-aos="slide-up">归档</h1>
+            <h1 data-aos="slide-up">Ai API for Java</h1>
           </a>
         
       
       
         
         <h2 id="subtitle-wrap" data-aos="slide-down">
-          
-            <a href="/" id="subtitle">2025/1</a>
           
         </h2>
       
@@ -236,10 +239,20 @@
   
   
   
-  <div class="sidebar-wrapper ">
+  <div class="sidebar-wrapper wrap-sticky">
     <div class="sidebar-wrap" data-aos="fade-up">
       
-        <div class="sidebar-author">
+        
+          <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        
+      
+  </div>
+</div>
+</div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Balinhui" class="lazyload">
   <div class="sidebar-author-name">Balinhui</div>
   <div class="sidebar-description">悄咪咪地……</div>
@@ -314,100 +327,93 @@
     
   
 </div>
-
+</div>
+        
       
+      
+        
+          <div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div>
+        
       
     </div>
   </div>
 
   <div class="sidebar-widget">
   
-    
-      
-  <div class="widget-wrapper">
-    <div class="widget-wrap" data-aos="fade-up">
-      <h3 class="widget-title">标签云</h3>
-      <div class="widget tagcloud">
-        <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/project/" style="font-size: 10px;">project</a> <a href="/tags/windows/" style="font-size: 10px;">windows</a>
-      </div>
-    </div>
-  </div>
-
-
-    
-  
   </div>
   
 </aside>
 
-          <section id="main">
-<div class="archives-outer-wrap" data-aos="fade-up">
-  
-    <div class="tag-wrap">
-  
-    <div class="archives-tag-list-item" data-aos="zoom-in">
-      <a class="archives-tag-list-link" href="/tags/project/">project</a>
-    </div>
-  
-    <div class="archives-tag-list-item" data-aos="zoom-in">
-      <a class="archives-tag-list-link" href="/tags/markdown/">markdown</a>
-    </div>
-  
-    <div class="archives-tag-list-item" data-aos="zoom-in">
-      <a class="archives-tag-list-link" href="/tags/windows/">windows</a>
-    </div>
-  
+          <section id="main"><article id="post-AiAPIForJava" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-inner" data-aos="fade-up">
+    <div class="article-meta">
+      <div class="article-date">
+  <span class="article-date-link" data-aos="zoom-in">
+    <time datetime="2025-06-05T14:50:44.000Z" itemprop="datePublished">2025-06-05</time>
+    <time style="display: none;" id="post-update-time">2025-06-05</time>
+  </span>
 </div>
-<div class="category-wrap">
-  
-</div>
-  
-  
-    
-    
-    
-      
-      
-        
-        
-        <section class="archives-wrap" data-aos="fade-up">
-          <div class="archive-year-wrap">
-            <a href="/archives/2025" class="archive-year">2025</a>
-          </div>
-          <ul>
-            
-            <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <span>
-      <time class="dt-published" datetime="2025-01-20T11:01:38.026Z" itemprop="datePublished">01-20</time>
-    </span>
-  </div>
-  
-    <a class="archive-article-title" href="/2025/01/20/test/">Hello World</a>
-  
-</li>
 
-            
       
-      
-            <li class="archive-article">
-  <div class="archive-article-date-wrap">
-    <span>
-      <time class="dt-published" datetime="2025-01-20T11:01:38.026Z" itemprop="datePublished">01-20</time>
-    </span>
-  </div>
-  
-    <a class="archive-article-title" href="/2025/01/20/%E6%95%B0%E5%AD%A6/">math</a>
-  
-</li>
 
-            
-            
-          </ul>
-        </section>
+    </div>
+    <div class="hr-line"></div>
     
-  
+
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+      
+        <p>To be continue…</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item" data-aos="zoom-in"><a class="article-tag-list-link" href="/tags/project/" rel="tag">project</a></li></ul>
+
+
+    </footer>
   </div>
+  
+  <nav id="article-nav" data-aos="fade-up">
+    
+    
+    
+    <div class="article-nav-link-wrap article-nav-link-right">
+      
+        <img data-src="/covers/cover.webp" data-sizes="auto" alt="Hello World" class="lazyload">
+      
+      <a href="/2025/01/20/test/"></a>
+      <div class="article-nav-caption">后一篇</div>
+      <h3 class="article-nav-title">
+        
+          Hello World
+        
+      </h3>
+    </div>
+    
+  </nav>
+
+
+</article>
+
+
+
+
+
+
+
 
 
 
@@ -469,7 +475,17 @@
       <nav id="mobile-nav">
   <div class="sidebar-wrap">
     
-      <div class="sidebar-author">
+      
+        <div class="sidebar-toc-sidebar"><div class="sidebar-toc">
+  <h3 class="toc-title">文章目录</h3>
+  <div class="sidebar-toc-wrapper toc-div-class" >
+      
+        
+      
+  </div>
+</div>
+</div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
   <img data-src="/avatar/avatar.webp" data-sizes="auto" alt="Balinhui" class="lazyload">
   <div class="sidebar-author-name">Balinhui</div>
   <div class="sidebar-description">悄咪咪地……</div>
@@ -544,9 +560,17 @@
     
   
 </div>
-
+</div>
+      
     
   </div>
+  
+    
+      <div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div>
+    
   
 </nav>
 
@@ -628,11 +652,71 @@
 
 <div id="lazy-script">
   <div>
+    
+      
+      
+      <script data-pjax>
+        window.REIMU_POST = {
+          author: "Balinhui",
+          title: "Ai API for Java",
+          url: "http://example.com/2025/06/05/AiAPIForJava/",
+          excerpt: "",
+          description: "",
+          stripContent: "To be continue… ",
+          date: "Thu Jun 05 2025 22:50:44 GMT+0800",
+          updated: "Thu Jun 05 2025 22:51:51 GMT+0800",
+          cover: "/images/banner.webp",
+        };
+      </script>
        
     
     
       
+        
+<script src="/js/insert_highlight.js" data-pjax></script>
+
+        
+      
     
+    
+      <script type="module" data-pjax>
+        const PhotoSwipeLightbox = (await safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe-lightbox.esm.min.js", "sha384-DiL6M/gG+wmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF/N6lrZi/")).default;
+        
+        const pswp = () => {
+          if (_$$('.article-entry a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-entry',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          if(_$$('.article-gallery a.article-gallery-item').length > 0) {
+            new PhotoSwipeLightbox({
+              gallery: '.article-gallery',
+              children: 'a.article-gallery-item',
+              pswpModule: () => safeImport("https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8+oTJ7m3DfYEWX1fu1scuS4+s")
+            }).init();
+          }
+          window.lightboxStatus = 'done';
+          window.removeEventListener('lightbox:ready', pswp);
+        }
+        if(window.lightboxStatus === 'ready') {
+          pswp()
+        } else {
+          window.addEventListener('lightbox:ready', pswp);
+        }
+      </script>
+      
+        
+
+
+
+
+
+
+
+
+      
     
   </div>
 </div>
