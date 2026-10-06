@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2026-08-19T13:18:32.995Z</updated>
+  <updated>2026-10-06T02:14:19.655Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java FFM</title>
+    <link href="http://example.com/2026/10/06/Java-FFM/"/>
+    <id>http://example.com/2026/10/06/Java-FFM/</id>
+    <published>2026-10-06T01:07:06.000Z</published>
+    <updated>2026-10-06T02:14:19.655Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;简介&quot;&gt;&lt;a class=&quot;markdownIt-Anchor&quot; href=&quot;#简介&quot;&gt;&lt;/a&gt; 简介&lt;/h1&gt;
+&lt;p&gt;Java FFM 来自 Project Panama ，由两部分组成，Foreign Function 和 Memory</summary>
+        
+      
+    
+    
+    
+    
+    <category term="Java" scheme="http://example.com/tags/Java/"/>
+    
+  </entry>
   
   <entry>
     <title>aokana</title>
